@@ -1,3 +1,17 @@
+@font-face {
+	font-family: ProximaNova;
+	src: url(../fonts/proximanova-regular.otf);
+}
+@font-face {
+	font-family: ProximaNova-light;
+	src: url(../fonts/proximanova-light.otf);
+}
+@font-face {
+	font-family: ProximaNova-bold;
+	src: url(../fonts/proximanova-bold.otf);
+}
+
+
 * {
 	padding: 0;
 	margin: 0;
@@ -5,12 +19,195 @@
 
 body {
 	background-color: #fafdff;
+	font: 300 36px / 30px ProximaNova-light;
+	color: #646464;
 }
-
+a {
+	color: #00aaff;
+	text-decoration: none;
+}
+a:hover {
+	color: #4cc4ff;
+	text-decoration: underline;
+}
+a:visited {
+	color: #058bce;
+}
 .content {
 	width: 1000px;
 	margin: 0 auto;
 }
 #head {
+	position: relative;
 	height: 74px;
+	background: #f9fdff;
+	box-shadow: 0 0 15px rgba(0,0,0,0.25); 
+}
+.logo {
+	margin-top: 20px;
+}
+.head-text {
+	color: #646464;
+	margin-left: 120px;
+}
+.rounded-rectangle {
+	display: inline-block;
+	text-align: center;
+	width: 32px;
+	height: 35px;
+	border: 1px solid #00b5ff;
+	border-radius: 5px;
+	padding-top: 7px;
+}
+
+#arrow-small {
+	position: absolute;
+	width: 25px;
+	height: 12px;
+	top: 72px;
+	left: 300px;
+}
+
+/*Navigation*/
+
+#navigation {
+	position: relative;
+}
+.steps-icons {
+	margin-left: 20px;
+}
+#steps-list {
+	margin-top: 60px;
+	position: relative;
+	list-style-type: none;
+	font: 400 18px / 24px ProximaNova;
+}
+#steps-list li {
+	width: 387px;
+	height: 71px;
+	border: 1px solid #dce3e8;
+	margin-top: 20px;
+}
+#steps-list li:nth-child(4) {
+	font: 600 21.64px / 24.727px ProximaNova;
+	position: relative;
+	background-color: #00afff;
+	color: #ffffff;
+	margin-top: 40px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#steps-list li:nth-child(4) img {
+	position: absolute;
+	top: 26px;
+	left: 340px;
+}
+#steps-list li:nth-child(4) img:nth-child(3) {
+	position: absolute;
+	top: 14px;
+	left: 326px;
+}
+#steps-list li:nth-child(4):hover {
+	background-color: #00a2ff;
+}
+#steps-list li:nth-child(4) p {
+	margin-left: 100px;
+}
+.steps-text {
+	display: inline;
+	margin: 50px 0 0 15px;
+	line-height: 75px;
+}
+.bold-text {
+	font: 600 18px / 24px ProximaNova;
+}
+.click-here {
+	display: inline;
+	margin: 15px 0 0 120px;
+	font: 400 14.42px / 18.546px ProximaNova;
+}
+.mac-gif {
+	position: absolute;
+	top: -35px;
+	left: 573px;
+}
+.number-of-downloads {
+	position: absolute;
+	left: 680px;
+	top: 300px;
+	opacity: 0.7;
+}
+.number-of-downloads img:nth-child(2) {
+	margin-left: 30px;
+}
+
+/*Media*/
+
+#media {
+	position: relative;
+	margin-top: 40px;
+	border-top: 1px solid #eff7fa;
+}
+.decoration-none:hover {
+	text-decoration: none;
+}
+.media-list {
+	list-style-type: none;
+	margin: 30px 0 0 140px;	
+}
+.media-list li {
+	display: inline-block;
+	cursor: pointer;
+}
+.media-number1 {
+	background: url("../images/Cnn.png") no-repeat;
+	width: 66px;
+	height: 32px;
+}
+.media-number1:hover {
+	background-position: 0 -32px;
+}
+.media-number2 {
+	background: url("../images/dezzian.png") no-repeat;
+	margin-left: 80px;
+	width: 150px;
+	height: 38px;
+	opacity: 0.2;
+	cursor: pointer;
+}
+.media-number2:hover {
+	opacity: 1;
+}
+.media-number3 {
+	background: url("../images/forbes.png") no-repeat;
+	height: 28px;
+	width: 109px;
+	margin-left: 80px;
+	cursor: pointer;
+}
+.media-number3:hover {
+	background-position: -1px -28px;
+}
+.media-number4 {
+	background: url("../images/mack-machines.png") no-repeat;
+	height: 23px;
+	width: 149px;
+	margin-left: 80px;
+	cursor: pointer;
+}
+.media-number4:hover {
+	background-position: 0 -23px;
+}
+
+/*Information*/
+
+#information {
+	margin-top: 30px;
+	position: relative;
+	background-color: #f3f6f8;
+	font: 400 24px / 30px ProximaNova;
+	padding: 5px;
+}
+#information h3 {
+	margin: 35px 0 0 255px;
 }
